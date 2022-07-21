@@ -1,6 +1,21 @@
+import bcrypt from "bcryptjs";
+
 const data = {
+    users: [{
+            name: "Danish",
+            email: "admin@example.com",
+            password: bcrypt.hashSync("123456"),
+            isAdmin: true,
+        },
+        {
+            name: "John",
+            email: "user@example.com",
+            password: bcrypt.hashSync("123456"),
+            isAdmin: false,
+        },
+    ],
     products: [{
-            _id: "1",
+            // _id: "1",
             name: "Nike Slim Shoes",
             slug: "nike-slim-shoes",
             category: "Shoes",
@@ -13,7 +28,7 @@ const data = {
             image: "/images/img1.jpg",
         },
         {
-            _id: "2",
+            // _id: "2",
             name: "addidas Slim Shoes",
             slug: "Addidas-slim-shoes",
             category: "Shoes",
@@ -26,7 +41,7 @@ const data = {
             image: "/images/img4.jpg",
         },
         {
-            _id: "3",
+            // _id: "3",
             name: "Servis Slim Shoes",
             slug: "Service-slim-shoes",
             category: "Shoes",
@@ -39,7 +54,7 @@ const data = {
             image: "/images/img2.jpg",
         },
         {
-            _id: "4",
+            // _id: "4",
             name: "Bata Slim Shoes",
             slug: "Bata-slim-shoes",
             category: "Shoes",
@@ -52,7 +67,7 @@ const data = {
             image: "/images/img5.jpg",
         },
         {
-            _id: "5",
+            // _id: "5",
             name: "Stylo Slim Shoes",
             slug: "Stylo-slim-shoes",
             category: "Shoes",
@@ -65,7 +80,7 @@ const data = {
             image: "/images/img-6.jpg",
         },
         {
-            _id: "6",
+            // _id: "6",
             name: "Ndure Slim Shoes",
             slug: "Ndure-slim-shoes",
             category: "Shoes",

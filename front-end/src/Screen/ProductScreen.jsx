@@ -54,6 +54,7 @@ const ProductScreen = () => {
     };
     fetchData();
   }, [slug]);
+
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const { cart } = state;
   const addToCartHandler = async () => {
