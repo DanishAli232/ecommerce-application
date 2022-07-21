@@ -6,6 +6,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { HelmetProvider } from "react-helmet-async";
 import StoreProvider from "./Screen/Store";
+// import App1 from "./For Practice/app";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
