@@ -23,6 +23,15 @@ orderRouter.post(
         res.status(201).send({ message: "New Order Created", order });
     })
 );
+orderRouter.get(
+    "/mine",
+    isAuth,
+    expressAsyncHandler(async(req, res) => {
+        //req.user._id comes from middleware( isAuth)
+        const orders = await Order.find({ user: req.user._id });
+        res.send(orders);
+    })
+);
 
 orderRouter.get(
     "/:id",

@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import LoadingBox from "../Components/LoadingBox";
 import MessageBox from "../Components/MessageBox";
 import { Store } from "../Screen/Store";
-import { getError } from "../utils";
+import { getError } from "../Utils";
 import { toast } from "react-toastify";
 
 function reducer(state, action) {
